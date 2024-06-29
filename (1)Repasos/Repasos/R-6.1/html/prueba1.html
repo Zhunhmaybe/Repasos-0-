@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>FACTURA</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="factura">
+    <meta name="author" content="Grupo1">
+    <meta name="copyright" content="UTN ">
+    <meta name="robots" content="index">
+    <meta name="robots" content="follow">
+    <!-- concetar prueba.css -->
+    <link rel="stylesheet" href="../styles/prueba.css">
+    
+</head>
+
+<body>
+    <header>
+        <p><b>FACTURA</b></p>
+    </header>
+    <nav>
+
+    </nav>
+    <!-- <form> -->
+        <main>
+            <article>
+                <section>
+                    <table class="fecha">
+                        <tr>
+                            <th>FechaEmision</th>
+                            <th>Dia</th>
+                            <th>Mes</th>
+                            <th>Año</th>
+                        </tr>
+                        <tr>
+                            <td>En:</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+                <br>
+                <section class="datosUser">
+                    <label for="id">Nombre: </label><input type="text" name="nombre" placeholder="Nombre del cliente">
+                    <label>RIF C.I.: </label><input type="text"  name="rif" placeholder="RIF o C.I. del cliente"><br>
+                    <label>Domicilio Fiscal: </label><input type="text" name="domicilio"
+                        placeholder="Domicilio Fiscal del cliente"><br>
+                    <label>Telefono: </label><input type="text" name="telefono" placeholder="Telefono del cliente">
+                </section>
+                <br>
+                <section>
+                    <table class="detalles-factura">
+                        <tr>
+                            <th>Forma De Pago</th>
+                            <th>Condiciones De Pago</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="pagoF"><label> Efectivo</label>
+                                <input type="checkbox" name="pagoF"><label> Tdebito</label>
+                                <input type="checkbox" name="pagoF"><label> checke</label>
+                            </td>
+                            <td><input type="checkbox" name="pagoF"><label> Contado</label>
+                                <input type="checkbox" name="pagoF"><label> Credito</label>
+                                <br><label>Dias</label><input type="text" name="pagoF">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <br>
+                <section id="prueba">
+                   <div class="detalles">
+                        <table id="tabla">
+                            <tr>
+                                <th class="ancho">Cant</th>
+                                <th class="ancho">Descripcion</th>
+                                <th class="ancho">Precio Unit</th>
+                                <th class="ancho">Total BS</th>
+                            </tr>
+                        </table>
+                   </div>
+                    
+                    <div id="productos">
+                        <!-- Los formularios de productos se agregarán aquí -->
+                    </div>
+                    <input type="button"  value="Agregar Producto" onclick="addProductForm()">
+                    <button id="btnGuardar">Guardar</button>
+            
+                </section>
+                <section class="detalles_2">
+                    <div class = "cuadro">
+                        <Strong>Numero de control:</Strong><br>
+                        <p>00-001</p>
+                    </div>
+                    <div class="datos_2">
+                        <p><strong>SUB-TOTAL-Br</strong></p>
+                        <p><strong>EXENTO</strong></p>
+                        <p><strong>BASE IMPONIBLE</strong></p>
+                        <p><strong>IVA % sobre Bs</strong></p>
+                        <p><strong>TOTAL A PAGAR</strong></p>
+
+                    </div>
+                    <div class="subtotal">
+                        <input type="number" id="sub_total" readonly>
+                        <input type="text">
+                        <input type="text">
+                        <input type="number" id="iva" readonly>
+                        <input type="number" id="grand-total" readonly>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <aside>
+
+        </aside>
+    <!-- </form> -->
+    <footer> 
+        <p>PIE DE IMPRENTA</p> 
+    </footer>
+    <script src="../script/prueba.js"></script>
+</body>
+
+</html>

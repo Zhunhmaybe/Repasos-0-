@@ -1,0 +1,41 @@
+
+header p{
+    position: relative;
+    left: 80%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1.8px solid;
+    height: 15px;
+}
+
+th {
+    background-color: #c3bebe;
+    border: 1.8px solid;
+    height: 15px;
+}
+
+td {
+    border: 1.8px solid;
+    height: 15px;
+}
+
+
+footer p {
+    border: solid;
+    border-radius: 5px;
+}
+.fecha {
+    font-size: 80%;
+    width: 40%;
+    position: relative;
+    left: 60%;
+}
+
+.datosUser {
+    border: 1.8px solid;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="cuadrado"></div>
+        <script>            
+           
+           class CuboMagico{
+                constructor(tam){
+                    this.tam=tam;
+                    this.arreglo=[];
+                    for(let i=0;i<tam;i++){
+                        this.arreglo[i]=[];
+                        for(let j=0;j<tam;j++){
+                            this.arreglo[i][j]=0;
+                        }
+                    }
+                }
+                Generar(){
+                    let cont=1,i=0,j=~~(this.tam/2);
+                    while(cont<=~~(this.tam*this.tam)){
+                        //caso i y j
+                        if(i<0 && j>=this.tam){
+                            j--;
+                            i+=2;
+                        }
+                        //caso i
+                        if(i<0 && j<this.tam){
+                            i=this.tam-1;
+                        }
+                        //caso j
+                        if(j>=this.tam && i>=0){
+                            j=0;
+                        }
+                        //caso lleno
+                        if(this.arreglo[i][j]!=0){
+                            j--;
+                            i+=2;
+                        }
+                        this.arreglo[i][j]=cont;cont++;
+                        i--;
+                        j++;
+                    }
+                }
+                Imprimir(){
+                    for(let i=0;i<this.arreglo.length;i++){                                             
+                        console.log(this.arreglo[i])                        
+                    }
+                }                
+           }
+           const cubo=new CuboMagico(3);
+           cubo.Generar();
+           cubo.Imprimir();
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:rgb(12, 58, 82);
+}
+main{
+    min-height: 100vh;
+    position:relative;
+}
+
+.Cara{
+    z-index:2;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    background-color: black;    
+    width:200px;
+    height:200px;
+    border-radius: 50%;    
+}
+.Rostro{    
+    z-index:3;
+    position:absolute;
+    background-color: azure;
+    width:190px;
+    height:190px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0px 7px 5px azure;
+}
+
+.OjoI{
+    z-index: 3;
+    position:absolute;
+    background-color: black;
+    width:40px;
+    height: 40px; 
+    top:30%;
+    left:15%;
+    border-radius: 50%;    
+}
+
+.OjoI::after{
+    content: "";
+    position: absolute;
+    background-color:azure;
+    top:15%;
+    left:15%;
+    width:15px;
+    height:15px; 
+    border-radius:50%;
+}
+.OjoD{
+    z-index: 3;
+    position:absolute;
+    background-color: black;
+    width:40px;
+    height: 40px; 
+    top:30%;
+    left:60%;
+    border-radius: 50%;    
+}
+
+.OjoD::after{
+    content: "";
+    position: absolute;
+    background-color:azure;
+    top:15%;
+    left:15%;
+    width:15px;
+    height:15px; 
+    border-radius:50%;
+}
+
+.Pico{
+    z-index:4;
+    position: absolute;
+    
+    background-color:#f3b93f;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+     
+    border-bottom: 10px solid azure;
+    border-left: 20px solid  azure;
+    border-right: 20px solid  azure;
+    
+}
+
+
+.Torso{
+    z-index:1;
+    position:absolute;
+    background-color:black;
+    width:220px;;
+    height:240px;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 40% ;
+}
+.Panza{ 
+    z-index:3;
+    position:absolute;
+    background-color:azure;
+    width:210px;;
+    height:230px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 40%;
+}
+.AlaD{
+    z-index: -10;
+    position: absolute;
+    top:25%;
+    left:-10%;
+    background-color:azure;
+    width:50px;;
+    height:150px;
+    
+    border-radius: 100px / 160px 200px;
+    transform: rotate(5deg);
+}
+

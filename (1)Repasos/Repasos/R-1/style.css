@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(33, 49, 80);
+}
+
+.cuadrado{
+    position: relative;
+    background-color: rgb(232, 166, 0);
+    width:100px;
+    height:100px;
+}
